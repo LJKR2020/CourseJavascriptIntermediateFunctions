@@ -77,7 +77,7 @@ function averageGrade(grades) {
         sumOfArray = sumOfArray + grades[i];
     }
     let averageNumber = sumOfArray / grades.length;
-    return averageNumber.toLocaleString(undefined, { maximumFractionDigits: 2, minimumFractionDigits: 2 });;
+    return averageNumber.toFixed(2);
 }
 
 console.log(averageGrade([9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6]));
