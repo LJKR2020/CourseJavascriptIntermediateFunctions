@@ -35,7 +35,7 @@ function cumLaude(grades) {
     let output = 0;
     for (let i = 0; i < grades.length; i++) {
         if (grades[i] >= 8) {
-            output = output + 1}
+            output += 1}
     }
     return output;
 }
@@ -74,7 +74,7 @@ let grades2 = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 function averageGrade(grades) {
     let sumOfArray = 0;
     for (let i = 0; i < grades.length; i++) {
-        sumOfArray = sumOfArray + grades[i];
+        sumOfArray += grades[i];
     }
     let averageNumber = sumOfArray / grades.length;
     return averageNumber.toFixed(2);
