@@ -73,10 +73,7 @@ function checkEmailValidity(email) {
     const komma = email.includes(",");
     const point = email.lastIndexOf(".");
     const point1 = point !== email.length - 1;
-    if (monkey && !komma && point1) {
-        return true;
-    }
-    else return false;
+    return (monkey && !komma && point1)
 }
 
 console.log(checkEmailValidity("n.eeken@novi.nl"));
